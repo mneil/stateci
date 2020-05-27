@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const cdk = require('@aws-cdk/core');
-const { StateciStack } = require('../lib/stateci-stack');
+const { BaselineStack } = require('../lib/baseline-stack');
 
 const app = new cdk.App();
-new StateciStack(app, 'StateciStack');
+new BaselineStack(app, 'StateciBaselineStack');
